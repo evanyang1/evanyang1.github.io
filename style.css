@@ -23,38 +23,23 @@ ul {
   border-radius: 50%;
 }
 
-/* typewriter */
-.typewriter {
-  font-family: Courier, monospace;
-  display: inline-block;
+.projects-paragraph {
+  margin-left: 2%;
+  margin-top: 2%;
 }
 
-.typewriter-text {
-    display: inline-block;
-  	overflow: hidden;
-  	letter-spacing: 2px;
- 	  animation: typing 5s steps(30, end), blink .75s;
-    white-space: nowrap;
-    font-size: 30px;
-    font-weight: 700;
-    border-right: 4px solid orange;
-    box-sizing: border-box;
+.ctr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
-@keyframes typing {
-    from {
-        width: 0%
-    }
-    to {
-        width: 100%
-    }
+.image-evan {
+  margin-top: 1%
 }
 
-@keyframes blink {
-    from, to {
-        border-color: transparent
-    }
-    50% {
-        border-color: orange;
-    }
+.p-ucla {
+  margin-left: 1.5%;
+  margin-top: 2%;
 }
