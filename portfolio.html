@@ -9,8 +9,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 
 
@@ -21,43 +20,50 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <!-- Navbar (Copy paste) -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="./index.html">Evan Yang</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-        </ul>
-    
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" href="./index.html">
+            Home
+          </a>
+          <a class="navbar-item" href="./portfolio.html">
+            Portfolio
+          </a>
+          <a class="navbar-item" href="./contact.html">
+            Contact
+          </a>
+        </div>
       </div>
     </nav>
     <!-- End Navbar (Copy paste) -->
 
+    <!-- Modal: Note on Github Repos-->
+    <button class="button is-primary modal-button" data-target="#myModal" aria-haspopup="true">Note on Github Repos</button>
+    <div class="modal" id="myModal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box"> If the deployed project URL is evanyang1.github.io/{project_name}/ then the URL to the Github repository is github.com/evanyang1/{project_name}. </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+
     <ol>
       <li><a href="https://github.com/evanyang1/evanyang1.github.io" target="_blank">Portfolio</a></li>
       <li> <a href="https://evanyang1.github.io/js-password-generator/" target="_blank">Password Generator</a></li>
-      <li><a href="https://evanyang1.github.io/js-api-weather-app/">Weather App</a></li>
-      <li><a href="https://evanyang1.github.io/js-calculator/">JavaScript Calculator</a></li>
+      <li><a href="https://evanyang1.github.io/js-api-weather-app/" target="_blank">Weather App</a></li>
+      <li><a href="https://evanyang1.github.io/js-calculator/" target="_blank">JavaScript Calculator</a></li>
+      <li><a href="https://carlnaza.github.io/parseSuperchargers/" target="_blank">ParseSuperchargers (Group Project)</a> <a href="https://github.com/Carlnaza/parseSuperchargers" target="_blank">(Repo)</a></li>
     </ol>
 
 
-
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-    <script src="" async defer></script>
+    <script src="portfolio.js"></script>
   </body>
 </html>
