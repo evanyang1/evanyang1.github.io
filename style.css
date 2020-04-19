@@ -1,45 +1,53 @@
 body {
-
- font-weight: 300;
- font-size: 200%;
- text-align: center;
- background: #fff;
+    font-weight: 300;
+    font-size: 200%;
+    text-align: center;
+    background: #fff;
 }
 
-p, ul {
-   font-family: 'Lato', sans-serif;
+header {
+    display: flex;
 }
 
-h1, h2, h3, h4, h5, h6 {
- font-weight: 500;
+p,
+ul {
+    font-family: 'Lato', sans-serif;
+}
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
-.evan-img {
-  border-radius: 50%;
+img {
+    border-radius: 50%;
 }
 
 .projects-paragraph {
-  margin-left: 2%;
-  margin-top: 2%;
+    margin-left: 2%;
+    margin-top: 2%;
 }
 
 .ctr {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
 }
 
 .image-evan {
-  margin-top: 1%
+    margin-top: 1%
 }
 
 .p-ucla {
-  margin-left: 1.5%;
-  margin-top: 2%;
+    margin-left: 1.5%;
+    margin-top: 2%;
 }

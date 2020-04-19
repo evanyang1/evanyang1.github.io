@@ -1,55 +1,69 @@
 <!doctype html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
 
-  <title>Portfolio</title>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="utf-8">
+
+    <title>Portfolio</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 
 </head>
+
 <body>
 
-  <!-- Navbar (Copy paste) -->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-        data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
+    <header>
+        <h1 class="p-ucla">Evan Yang</h1>
+        <img src="evan-yang.png" alt="Picture of Evan Yang." class="ctr image-evan">
+    </header>
+    <div class="row md-5">
+        <p class="p-ucla">UCLA graduate and software engineer. Currently attends the full stack coding bootcamp @ UCI. Holds the Amazon Web Services Cloud Practitioner certification.</p>
     </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-        <a class="navbar-item" href="./index.html">
-          Home
-        </a>
-        <a class="navbar-item" href="./portfolio.html">
-          Portfolio
-        </a>
-        <a class="navbar-item" href="./contact.html">
-          Contact
-        </a>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navbar (Copy paste) -->
 
-  <div class="row">
-    <img src="evan-yang.png" alt="Picture of Evan Yang." class="ctr image-evan">
-  </div>
-  <div class="row">
-    <h1 class="p-ucla">Evan Yang</h1>
-  </div>
-  <div class="row md-5">
-    <p class="p-ucla">UCLA graduate and software engineer. Currently attends the full stack coding bootcamp @ UCI. Holds the Amazon Web Services Cloud Practitioner certification.</p>
-  </div>
+
+    <!-- Modal: Note on Github Repos-->
+    <button class="button is-primary modal-button" data-target="#myModal" aria-haspopup="true">Note on Github Repos</button>
+    <div class="modal github-modal" id="myModal">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+            <div class="box"> If the deployed project URL is evanyang1.github.io/{project_name}/ then the URL to the Github repository is github.com/evanyang1/{project_name}. </div>
+        </div>
+        <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <div class="portfolio-items">
+        <ul>
+            <li><a href="https://github.com/evanyang1/evanyang1.github.io" target="_blank">Portfolio</a></li>
+            <li> <a href="https://evanyang1.github.io/js-password-generator/" target="_blank">Password Generator</a></li>
+            <li><a href="https://evanyang1.github.io/js-api-weather-app/" target="_blank">Weather App</a></li>
+            <li><a href="https://evanyang1.github.io/js-calculator/" target="_blank">JavaScript Calculator</a></li>
+            <li><a href="https://carlnaza.github.io/parseSuperchargers/" target="_blank">ParseSuperchargers (Group Project)</a> <a href="https://github.com/Carlnaza/parseSuperchargers" target="_blank">(Repo)</a></li>
+            <li><a href="https://limitless-badlands-54723.herokuapp.com/" target="_blank">Express Notetaker</a> <a href="https://github.com/evanyang1/notes-app-jsonfile" target="_blank">(Repo)</a></li>
+            <li><a href="https://young-forest-25942.herokuapp.com/" target="_blank">Burger App</a> <a href="https://github.com/evanyang1/burger-logger" target="_blank">(Repo)</a></li>
+            <li><a href="https://warm-stream-20124.herokuapp.com/" target="_blank">Fake Yelp (Group Project)</a> <a href="https://github.com/evanyang1/felp" target="_blank">(Repo)</a></li>
+            <li>
+                <a href="https://still-mesa-24441.herokuapp.com/" target="_blank">Pin (Group Project)</a>
+                <a href="https://github.com/ariasadeghi530/Pin" target="_blank">(Repo)</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <ul>
+        <li><a href="https://www.linkedin.com/in/evanjyang/" target="_blank">LinkedIn</a></li>
+        <li><a href="https://github.com/evanyang1" target="_blank">Github</a></li>
+    </ul>
+
+    <script src="portfolio.js"></script>
+
 
 </body>
+
 </html>
