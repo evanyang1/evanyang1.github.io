@@ -47,7 +47,29 @@ img {
     margin-top: 1%
 }
 
+.logo {
+    height: 10%;
+    width: 10%;
+}
+
 .p-ucla {
     margin-left: 1.5%;
     margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.portfolio-items {
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.contact-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 5%;
+    margin-bottom: 2%;
 }
